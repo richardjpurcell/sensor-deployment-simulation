@@ -1,4 +1,4 @@
-# Wildfire Simulation Project
+# Sensor Deployment Simulation
 
 This project simulates wildfire sensor deployment using various algorithms. It includes modules for:
 - **Data loading** (`fire_data.py`),
