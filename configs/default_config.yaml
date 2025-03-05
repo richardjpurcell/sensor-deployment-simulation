@@ -1,8 +1,8 @@
-experiment_name: "Wildfire_Greedy_Exp02"
+experiment_name: "Wildfire_Greedy_Exp03"
 run_mode: "simulate"   # Options: "simulate", "visualize_only"
 data:
-  directory: "data/Sub40x40/grids/Grids1"
-  num_time_steps: 8
+  directory: "data/Sub40x40_large/grids/Grids1"
+  num_time_steps: 15
 simulation:
   detection_threshold: 0.5
 deployment:
@@ -13,8 +13,8 @@ logs:
   output_directory: "logs"
 dashboard:
   enabled: true
-initial_forest_image: "data/Sub40x40/InitialForest.png"
+initial_forest_image: "data/Sub40x40_large/InitialForest.png"
 burn_probability:
-  file: "" #"data/Sub40x40/Stats/BProb.csv"    # Provide path to a burn probability CSV if available; leave empty to generate randomly.
+  file: "data/Sub40x40_large/Stats/BProb.csv"    # Provide path to a burn probability CSV if available; leave empty to generate randomly.
   decay_factor: 0.9
 
