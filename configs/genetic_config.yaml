@@ -1,0 +1,24 @@
+experiment_name: "Wildfire_Genetic_Exp01"
+run_mode: "simulate"
+data:
+  directory: "data/Sub40x40/grids/Grids1"
+  num_time_steps: 8
+simulation:
+  detection_threshold: 0.5
+deployment:
+  algorithm: "Genetic"        # Options: Greedy, ReinforcementLearning, Genetic
+  num_sensors: 5
+  sensor_radius: 2.0
+  population_size: 50         # Genetic algorithm parameter: size of the population.
+  num_generations: 100        # Number of generations to evolve.
+  mutation_rate: 0.1          # Mutation rate for candidate sensor positions.
+  alpha: 0.5                  # Weight for burn probability in the fitness function.
+  beta: 0.5                   # Weight for fire intensity in the fitness function.
+logs:
+  output_directory: "logs"
+dashboard:
+  enabled: true
+initial_forest_image: "data/Sub40x40/InitialForest.png"
+burn_probability:
+  file: ""                    # Provide a path if a burn probability CSV is available.
+  decay_factor: 0.9

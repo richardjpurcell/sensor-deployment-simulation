@@ -1,0 +1,22 @@
+experiment_name: "Wildfire_RL_Exp01"
+run_mode: "simulate"
+data:
+  directory: "data/Sub40x40/grids/Grids1"
+  num_time_steps: 8
+simulation:
+  detection_threshold: 0.5
+deployment:
+  algorithm: "ReinforcementLearning"    # Options: Greedy, ReinforcementLearning
+  num_sensors: 5
+  sensor_radius: 2.0
+  epsilon: 0.2       # Exploration rate for epsilon-greedy selection.
+  alpha: 0.7         # Weight for the burn probability in the value computation.
+  beta: 0.3          # Weight for the fire intensity in the value computation.
+logs:
+  output_directory: "logs"
+dashboard:
+  enabled: true
+initial_forest_image: "data/Sub40x40/InitialForest.png"
+burn_probability:
+  file: ""           # Provide path to a burn probability CSV if available.
+  decay_factor: 0.9
