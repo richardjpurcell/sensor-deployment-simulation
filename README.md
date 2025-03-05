@@ -13,7 +13,7 @@ The overall goal is to place sensors on a grid representing a forest to detect w
 ---
 
 ## Directory Structure
-'''
+```
 wildfire_simulation/
 ├── algorithms/
 │   ├── __init__.py
@@ -47,7 +47,7 @@ wildfire_simulation/
 ├── metrics.py
 ├── simulation.py
 └── README.md
-'''
+```
 
 Below is a brief explanation of each key directory:
 
