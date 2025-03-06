@@ -102,6 +102,5 @@ Below is a brief explanation of each key directory:
    Select one of the YAML files in `configs/` (e.g., `genetic_config.yaml`) or create a new one.
 
 3. **Run the Script:**  
-   ```bash
    python main.py --config configs/genetic_config.yaml
 
