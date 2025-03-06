@@ -92,7 +92,7 @@ def load_time_step_logs(logs_dir):
             time_step_logs[data["time_step"]] = data
     return time_step_logs
 
-def interactive_dashboard(fire_maps, sensor_positions_history, coverage_history, bp_maps):
+def interactive_dashboard(fire_maps, sensor_positions_history, coverage_history, bp_maps,experiment_name):
     """
     Creates an interactive dashboard with three panels:
       1. Fire progression with sensor deployment (current time step).
@@ -111,6 +111,7 @@ def interactive_dashboard(fire_maps, sensor_positions_history, coverage_history,
 
     # Create a figure with three subplots side by side.
     fig, axs = plt.subplots(1, 3, figsize=(18, 6))
+    fig.suptitle(f"Experiment: {experiment_name}", fontsize=16)  # Now experiment_name is defined.
     plt.subplots_adjust(bottom=0.25)
 
     # Panel 1: Fire progression with sensor deployment.

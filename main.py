@@ -69,7 +69,8 @@ def main():
             interactive_dashboard(fire_data.fire_maps,
                                     simulation.sensor_positions_history,
                                     coverage_history,
-                                    simulation.bp_maps)
+                                    simulation.bp_maps,
+                                    exp_name)
     
     elif run_mode.lower() == "visualize_only":
         data_dir = config["data"]["directory"]
@@ -93,7 +94,8 @@ def main():
             interactive_dashboard(fire_data.fire_maps,
                                     sensor_positions_history,
                                     coverage_history,
-                                    bp_maps)
+                                    bp_maps,
+                                    exp_name)
     
     else:
         raise ValueError(f"Unknown run_mode specified: {run_mode}")
