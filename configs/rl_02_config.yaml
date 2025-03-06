@@ -1,4 +1,4 @@
-experiment_name: "Reinforcement Learning with Burn Probability Map"
+experiment_name: "Reinforcement Learning with Random Probability"
 run_mode: "simulate"
 data:
   directory: "data/Sub40x40_large/grids/Grids1"
@@ -18,5 +18,5 @@ dashboard:
   enabled: true
 initial_forest_image: "data/Sub40x40_large/InitialForest.png"
 burn_probability:
-  file: "data/Sub40x40_large/Stats/BProb.csv"           # Provide path to a burn probability CSV if available.
+  file: ""           # Provide path to a burn probability CSV if available.
   decay_factor: 0.9

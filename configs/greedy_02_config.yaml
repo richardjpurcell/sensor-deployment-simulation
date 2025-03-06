@@ -1,4 +1,4 @@
-experiment_name: "Default Greedy Deployment with Random Probability"
+experiment_name: "Greedy Deployment with Probability Map"
 run_mode: "simulate"   # Options: "simulate", "visualize_only"
 data:
   directory: "data/Sub40x40_large/grids/Grids1"
